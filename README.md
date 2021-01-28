@@ -1,13 +1,15 @@
 # ChatRoomServer
-*2021/28/01*
 **Victor Martinez, PID 6202666**
+*2021/28/01*
 
 ## Compile/Run instructions:
 In folder with both .java files:
-> javac -d ./build *.java
-> cd ./build
-> jar -cvfe ChatRoomService.jar ChatRoomService *
-> java -jar ChatRoomService.jar
+```bash
+$ javac -d ./build *.java
+$ cd ./build
+$ jar -cvfe ChatRoomService.jar ChatRoomService *
+$ java -jar ChatRoomService.jar
+```
 
 ## Setup:
 Connect via port **4338**, or modify the port as you wish.

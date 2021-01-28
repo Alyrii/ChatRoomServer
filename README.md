@@ -1,6 +1,4 @@
 # ChatRoomServer
-**Victor Martinez, PID 6202666**\
-*2021/28/01*
 
 ## Compile/Run instructions:
 In folder with all three .java files:

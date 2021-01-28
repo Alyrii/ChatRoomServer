@@ -6,8 +6,11 @@ import java.util.concurrent.locks.ReentrantLock;
  * A class representing a chatroom with multiple users
  */
 public class Room {
-
+    /**
+     * The name of the Room
+     */
     public final String id;
+    
     private ArrayList<UserRunnable> users;
     private Lock userListAccessLock;
     private boolean dead;

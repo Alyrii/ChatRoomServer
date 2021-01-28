@@ -8,8 +8,11 @@ import java.util.concurrent.locks.ReentrantLock;
  * new Users
  */
 public class Server {
-
+    /**
+     * The port the server is running on
+     */
     public static final int PORT = 4338;
+    
     private static final ArrayList<Room> rooms = new ArrayList<Room>();
     private static Lock roomListAccessLock = new ReentrantLock();
     private static ArrayList<UserRunnable> users = new ArrayList<UserRunnable>();

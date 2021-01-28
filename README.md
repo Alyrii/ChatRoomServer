@@ -5,8 +5,8 @@ In folder with all three .java files:
 ```bash
 $ javac -d ./build *.java
 $ cd ./build
-$ jar -cvfe ChatRoomService.jar ChatRoomService *
-$ java -jar ChatRoomService.jar
+$ jar -cvfe server.jar Server *.class
+$ java -jar server.jar
 ```
 
 ## Setup:

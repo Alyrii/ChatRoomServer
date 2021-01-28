@@ -1,5 +1,5 @@
 # ChatRoomServer
-**Victor Martinez, PID 6202666**
+**Victor Martinez, PID 6202666**\
 *2021/28/01*
 
 ## Compile/Run instructions:
@@ -12,7 +12,7 @@ $ java -jar ChatRoomService.jar
 ```
 
 ## Setup:
-Connect via port **4338**, or modify the port as you wish.
+Connect via port **4338**, or modify the port as you wish.\
 Port forward to open server to the Internet.
 
 ## Commands:

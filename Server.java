@@ -27,14 +27,14 @@ public class Server {
      */
     public static Room getRoom(String id) {
         roomListAccessLock.lock();
-        Room room = null;
-        for(Room r : rooms) {
-            if(r.id.equals(id)) {
-                room = r;
+        for(Room room : rooms) {
+            if(room.id.equals(id)) {
+                roomListAccessLock.unlock();
+                return room;
             }
         }
         roomListAccessLock.unlock();
-        return room;
+        return null;
     }
 
     /**

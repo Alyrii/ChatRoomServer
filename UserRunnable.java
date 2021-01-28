@@ -155,9 +155,10 @@ public class UserRunnable implements Runnable {
         try (Scanner in = new Scanner(socket.getInputStream());
                 PrintWriter out = new PrintWriter(socket.getOutputStream(), true);) {
             this.out = out;
+            int totalUsers = Server.totalUsers();
             this.out.printf(
-                    "Welcome! You are connected to the Chat Room server.\r\nThere are %d users online.\r\nEnter \"!help\" to view available commands.\r\n",
-                    Server.totalUsers());
+                    "Welcome! You are connected to the Chat Room server.\r\nThere %s %d user%s online.\r\nEnter \"!help\" to view available commands.\r\n",
+                    (totalUsers == 1) ? "is" : "are", totalUsers, (totalUsers == 1) ? "" : "s");
             while (!Thread.interrupted()) {
                 if (in.hasNextLine()) {
                     String input = in.nextLine().trim();

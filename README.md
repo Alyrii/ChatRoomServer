@@ -3,7 +3,7 @@
 *2021/28/01*
 
 ## Compile/Run instructions:
-In folder with both .java files:
+In folder with all three .java files:
 ```bash
 $ javac -d ./build *.java
 $ cd ./build

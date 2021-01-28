@@ -1,0 +1,8 @@
+#build folder
+/build
+
+#compiled classes
+*.class
+
+#packages
+*.jar
